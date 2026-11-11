@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com o site sobre o Vasco da Gama.">
+    <title>Contato | Vasco da Gama</title>
+</head>
+
+<body id="topo">
+
+    <a href="#conteudo">Pular para o conteúdo</a>
+
+    <header>
+        <h1>Vasco da Gama — Gigante da Colina</h1>
+        <p>Um espaço para os torcedores vascaínos.</p>
+    </header>
+
+    <hr>
+
+    <nav aria-label="Navegação principal">
+        <h2>Menu</h2>
+
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="dados.html">Dados</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="contato.html" aria-current="page">Contato</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <main id="conteudo">
+
+        <section>
+            <h2>Entre em contato</h2>
+
+            <p>
+                Tem alguma sugestão, dúvida ou informação sobre o Vasco?
+                Entre em contato pelo formulário abaixo.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Informações de contato</h2>
+
+            <address>
+                Site fictício sobre o Vasco da Gama.<br>
+                São Januário, Rio de Janeiro - RJ.<br>
+
+                E-mail:
+                <a href="mailto:contato@sitevasco.example">
+                    contato@sitevasco.example
+                </a>
+
+                <br>
+
+                Telefone:
+                <a href="tel:+5521999999999">
+                    (21) 99999-9999
+                </a>
+            </address>
+
+            <p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Estadio+Sao+Januario"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Ver localização de São Januário no mapa
+                </a>
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Horários de atendimento fictícios</h2>
+
+            <dl>
+                <dt><strong>Segunda a sexta-feira</strong></dt>
+                <dd>Das 9h às 18h.</dd>
+
+                <dt><strong>Sábado</strong></dt>
+                <dd>Das 9h às 12h.</dd>
+
+                <dt><strong>Domingo e feriados</strong></dt>
+                <dd>Não há atendimento.</dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Envie sua mensagem</h2>
+
+            <p>
+                Preencha os campos abaixo para enviar sua dúvida,
+                sugestão ou comentário.
+            </p>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Seus dados</legend>
+
+                    <p>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome"
+                               autocomplete="name" required>
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email"
+                               autocomplete="email" required>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Mensagem</legend>
+
+                    <p>
+                        <label for="assunto">Assunto:</label>
+
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="elogio">Elogio</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="mensagem">Mensagem:</label>
+                    </p>
+
+                    <textarea id="mensagem" name="mensagem"
+                              rows="6" cols="40"
+                              maxlength="300" required></textarea>
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Enviar mensagem</button>
+                <button type="reset">Limpar formulário</button>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <p><a href="#topo">Voltar ao topo</a></p>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>Trabalho escolar de Aplicações de Programação.</p>
+        <p>Desenvolvido por Murilo Rode — Turma DSM3 — 2026.</p>
+        <p>Vasco da Gama — Gigante da Colina.</p>
+    </footer>
+
+</body>
+</html>

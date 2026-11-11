@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de cadastro para torcedores do Vasco da Gama.">
+    <title>Cadastro | Vasco da Gama</title>
+</head>
+
+<body id="topo">
+
+    <a href="#conteudo">Pular para o conteúdo</a>
+
+    <header>
+        <h1>Vasco da Gama — Gigante da Colina</h1>
+        <p>Um espaço para os torcedores vascaínos.</p>
+    </header>
+
+    <hr>
+
+    <nav aria-label="Navegação principal">
+        <h2>Menu</h2>
+
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="dados.html">Dados</a></li>
+            <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <main id="conteudo">
+
+        <section>
+            <h2>Cadastro de torcedor</h2>
+
+            <p>
+                Preencha o formulário para participar da nossa
+                comunidade fictícia de torcedores do Vasco da Gama.
+            </p>
+        </section>
+
+        <hr>
+
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <p>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome"
+                           autocomplete="name" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email"
+                           autocomplete="email" required>
+                </p>
+
+                <p>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone"
+                           autocomplete="tel">
+                </p>
+
+                <p>
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" id="nascimento"
+                           name="nascimento" required>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Sobre você</legend>
+
+                <fieldset>
+                    <legend>Como você conheceu o Vasco?</legend>
+
+                    <p>
+                        <input type="radio" id="familia"
+                               name="conheceu" value="familia" required>
+                        <label for="familia">Família</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="amigos"
+                               name="conheceu" value="amigos">
+                        <label for="amigos">Amigos</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="internet"
+                               name="conheceu" value="internet">
+                        <label for="internet">Internet</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <label for="anos">
+                        Há quantos anos você torce pelo Vasco?
+                    </label>
+
+                    <input type="number" id="anos" name="anos"
+                           min="0" max="100" step="1">
+                </p>
+
+                <p>
+                    <label for="jogador">
+                        Qual jogador você mais gosta?
+                    </label>
+
+                    <select id="jogador" name="jogador" required>
+                        <option value="">Selecione uma opção</option>
+
+                        <optgroup label="Ídolos históricos">
+                            <option value="roberto-dinamite">Roberto Dinamite</option>
+                            <option value="edmundo">Edmundo</option>
+                            <option value="juninho-pernambucano">Juninho Pernambucano</option>
+                            <option value="romario">Romário</option>
+                            <option value="felipe">Felipe</option>
+                            <option value="pedrinho">Pedrinho</option>
+                            <option value="carlos-germano">Carlos Germano</option>
+                        </optgroup>
+
+                        <optgroup label="Elenco atual">
+                            <option value="leo-jardim">Léo Jardim</option>
+                            <option value="robert-renan">Robert Renan</option>
+                            <option value="paulo-henrique">Paulo Henrique</option>
+                            <option value="lucas-piton">Lucas Piton</option>
+                            <option value="carlos-cuesta">Carlos Cuesta</option>
+                            <option value="thiago-mendes">Thiago Mendes</option>
+                            <option value="santiago-sosa">Santiago Sosa</option>
+                            <option value="tche-tche">Tchê Tchê</option>
+                            <option value="andres-gomez">Andrés Gómez</option>
+                            <option value="nuno-moreira">Nuno Moreira</option>
+                            <option value="adson">Adson</option>
+                            <option value="david">David</option>
+                            <option value="brenner">Brenner</option>
+                        </optgroup>
+
+                        <option value="outro">Outro</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="nota">
+                        Que nota você dá para o Vasco (0 a 10)?
+                    </label>
+
+                    <input type="number" id="nota" name="nota"
+                           min="0" max="10" step="0.1">
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Preferências</legend>
+
+                <p>Quais assuntos você gostaria de acompanhar?</p>
+
+                <p>
+                    <input type="checkbox" id="jogos"
+                           name="assuntos" value="jogos">
+                    <label for="jogos">Jogos e resultados</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="historia"
+                           name="assuntos" value="historia">
+                    <label for="historia">História do clube</label>
+                </p>
+
+                <p>
+                    <label for="mensagem">
+                        Conte um pouco sobre sua paixão pelo Vasco:
+                    </label>
+                </p>
+
+                <textarea id="mensagem" name="mensagem"
+                          maxlength="300" rows="5" cols="40"></textarea>
+
+                <p>
+                    <input type="checkbox" id="termos"
+                           name="termos" value="aceito" required>
+
+                    <label for="termos">
+                        Li e aceito os termos do cadastro.
+                    </label>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Enviar cadastro</button>
+            <button type="reset">Limpar formulário</button>
+
+        </form>
+
+        <p><a href="#topo">Voltar ao topo</a></p>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>Trabalho escolar de Aplicações de Programação.</p>
+        <p>Desenvolvido por Murilo Rode — Turma DSM3 — 2026.</p>
+        <p>Vasco da Gama — Gigante da Colina.</p>
+    </footer>
+
+</body>
+</html>
